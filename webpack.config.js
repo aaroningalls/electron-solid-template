@@ -60,9 +60,12 @@ module.exports = [
   },
   {
     mode,
-    entry: "./src/main/index.ts",
+    entry: {
+      main: "./src/main/index.ts",
+      preload: "./src/main/preload.ts",
+    },
     output: {
-      filename: "electron.js",
+      filename: "[name].bundle.js",
       path: path.join(__dirname, "build"),
     },
     target: "electron-main",

@@ -10,7 +10,7 @@
   "dependencies": {
     "source-map-support": "^0.5.16"
   },
-  "main": "build/electron.js",
+  "main": "build/main.bundle.js",
   "build": {
     "files": [
       "build/**/*"
